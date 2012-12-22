@@ -1,6 +1,6 @@
 # defalt
 
-##"Let me comment this out for a second..."
+<h3><i>"Let me comment this out for a second..."</i></h3>
 
 ## Rationale
 
@@ -22,7 +22,7 @@ How do you manage all that? There are various approaches: you may copy
 and paste the relevant function into the REPL, change it a bit and
 press enter, thus making an invisible change that you will forget
 about in half an hour. You can change your code in place, with a
-";;TODO remove this" and happily ignore your comment and deploy to
+`;;TODO remove this` and happily ignore your comment and deploy to
 your mocked code to production at the end of a long a difficult day.
 
 defalt attempts to provide a way out. It provides the tools to define

@@ -1,8 +1,8 @@
 (ns defalt
   (require [clojure.string :as string]))
 
-;; symbol key -> :selected
-;; symbol key -> :alternatives -> alternative key -> alternative function
+;; ns -> symbol key -> :selected
+;; ns -> symbol key -> :alternatives -> alternative key -> alternative function
 (def registry (atom {}))
 
 (defn parse-alt-name [alt-name]
@@ -46,7 +46,7 @@
 (defmacro reset [original]
   `(switch ~original ::master))
 
-#_(defmacro source [original alternative]
+(defmacro source [original alternative]
     (:source
      (meta
       (get-in @registry [original :alternatives alternative]))))

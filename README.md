@@ -45,10 +45,10 @@ Here is some code using defalt:
    (defn add-numbers [a b]
      (+ a b))
     
-   (defalt add-numbers|memo fun [a b]
+   (defalt add-numbers:memo fun [a b]
      (memoize fun))
     
-   (defalt add-numbers|mock [a b] 5)
+   (defalt add-numbers:mock [a b] 5)
 ```
 
 And here is what you can do in the REPL based on the code above:
@@ -85,9 +85,9 @@ And here is what you can do in the REPL based on the code above:
      1. memo
      2. mock
     
-   > (da/code add-numbers mock)
+   > (da/source add-numbers mock)
     
-   (defalt add-numbers|mock [a b] 5)
+   (defalt add-numbers:mock [a b] 5)
 ```
 
 ## License
